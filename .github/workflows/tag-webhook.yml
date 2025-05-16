@@ -8,8 +8,7 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Call webhook URL
-        run: |
-          curl -X POST https://modules.wippy.ai/webhook \
-            -H "Content-Type: application/json" \
-            -d '{"tag": "${GITHUB_REF##refs/tags/}"}'
+      - name: Use module release action
+        uses: wippyai/action-module-release@v1
+        with:
+          tag: ${{ github.ref_name }}
