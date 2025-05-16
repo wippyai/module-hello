@@ -1,0 +1,15 @@
+name: Call webhook on new tag
+
+on:
+  push:
+    tags:
+      - '*'  # triggered on all git tags
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call webhook URL
+        run: |
+          curl -X POST https://modules.wippy.ai/webhook \
+            -H "Content-Type: application/json" \
+            -d '{"tag": "${GITHUB_REF##refs/tags/}"}'
