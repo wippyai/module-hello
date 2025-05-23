@@ -8,14 +8,12 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    environment: production
+    environment: test
     permissions:
       contents: read
       packages: write
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
       
       - name: Release module
         uses: wippyai/action-module-release@main
