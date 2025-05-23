@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Release module
-        uses: wippyai/action-module-release@main
+        uses: wippyai/action-module-release@v1
         with:
           repository: ${{ github.repository }}
           tag: ${{ github.ref_name }}
