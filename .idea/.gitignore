@@ -8,3 +8,8 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+/GitLink.xml
+/misc.xml
+/module-hello.iml
+/modules.xml
+/vcs.xml

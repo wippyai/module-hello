@@ -14,9 +14,9 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Release module
-        uses: wippyai/action-module-release@v1
+        uses: wippyai/action-module-release@main
         with:
           repository: ${{ github.repository }}
           tag: ${{ github.ref_name }}
