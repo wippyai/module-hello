@@ -1,19 +1,22 @@
 version: "1.0.0"
 namespace: localspace
 
-requirements:
-  - parameter: NAMESPACE
-    description: "Target namespace for module dependency"
+entries:
+  - name: NAMESPACE
+    kind: ns.definition
+    meta:
+      description: "Target namespace for module dependency"
     targets:
       - value: meta.depends_on[]
 
-  - parameter: API_ROUTER
-    description: "Router to use for endpoints"
+  - name: API_ROUTER
+    kind: ns.definition
+    meta:
+      description: "Router to use for endpoints"
     targets:
         - name: hello_endpoint
           value: meta.router
 
-entries:
   - name: hello_handler
     kind: function.lua
     source: file://hello_world.lua
