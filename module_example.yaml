@@ -7,7 +7,7 @@ entries:
     meta:
       description: "Target namespace for module dependency"
     targets:
-      - value: ".meta.depends_on[]"
+      - value: ".meta.depends_on +="
 
   - name: API_ROUTER
     kind: ns.definition
