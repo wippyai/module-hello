@@ -3,19 +3,19 @@ namespace: localspace
 
 entries:
   - name: NAMESPACE
-    kind: ns.definition
+    kind: ns.requirement
     meta:
       description: "Target namespace for module dependency"
     targets:
-      - value: ".meta.depends_on +="
+      - path: ".meta.depends_on +="
 
   - name: API_ROUTER
-    kind: ns.definition
+    kind: ns.requirement
     meta:
       description: "Router to use for endpoints"
     targets:
-        - name: hello_endpoint
-          value: ".meta.router"
+        - entry: hello_endpoint
+          path: ".meta.router"
 
   - name: hello_handler
     kind: function.lua
