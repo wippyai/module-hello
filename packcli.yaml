@@ -1,4 +1,4 @@
-name: test/module-hello
+name: igor-test-3/module-hello
 version: 1.0.11
 description: "Minimal hello module for wippy.ai platform"
 dir: .
