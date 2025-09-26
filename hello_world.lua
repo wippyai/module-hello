@@ -20,7 +20,7 @@ local function handler()
   res:set_status(http.STATUS.OK)
   res:write_json({
     message = "Hello World from wippy.ai!",
-    version = "1.0.16",
+    -- version = "1.0.16",
     timestamp = os.time(),
     status = "success",
     platform = "wippy.ai"
