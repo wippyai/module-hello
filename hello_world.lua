@@ -19,10 +19,11 @@ local function handler()
   -- Return a simple Hello World message
   res:set_status(http.STATUS.OK)
   res:write_json({
-    message = "Hello World",
-    version = "1.0.14",
+    message = "Hello World from wippy.ai!",
+    version = "1.0.16",
     timestamp = os.time(),
-    status = "success"
+    status = "success",
+    platform = "wippy.ai"
   })
 end
 
