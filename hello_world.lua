@@ -20,6 +20,7 @@ local function handler()
   res:set_status(http.STATUS.OK)
   res:write_json({
     message = "Hello World",
+    version = "1.0.14",
     timestamp = os.time(),
     status = "success"
   })
