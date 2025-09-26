@@ -1,0 +1,14 @@
+name: test/module-hello
+version: 1.0.11
+description: "Minimal hello module for wippy.ai platform"
+dir: .
+ignore:
+  - "*.tmp"
+  - "*.log"
+  - ".git/"
+  - ".gitlab/"
+  - ".docker/"
+  - ".github/"
+  - ".idea/"
+  - "bin/"
+  - "README.md"
