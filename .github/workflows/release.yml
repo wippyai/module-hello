@@ -3,7 +3,7 @@ name: Release Module
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
   release:
@@ -21,6 +21,6 @@ jobs:
           repository: ${{ github.repository }}
           tag: ${{ github.ref_name }}
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
-          module_id: ${{ secrets.MODULE_ID }}
           username: ${{ secrets.WIPPY_USERNAME }}
           password: ${{ secrets.WIPPY_PASSWORD }}
+          directory: "."
