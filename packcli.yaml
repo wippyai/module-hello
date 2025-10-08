@@ -1,7 +1,6 @@
 name: igor-test-3/module-hello
-version: 1.0.13
 description: "Minimal hello module for wippy.ai platform"
-dir: .
+dir: src
 ignore:
   - "*.tmp"
   - "*.log"
